@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.PengajuanCuti.PengajuanCutiActivity">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#E8E8E8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengajuan e-cuti"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBack"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toTopOf="@+id/btnBack" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2">
+
+        <EditText
+            android:id="@+id/etNamaLengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Nama Lengkap"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/etNoHp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Nomor Handphone"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/etTanggalMulai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Tanggal Mulai"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/etTanggalBerakhir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Tanggal Berakhir"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+        <Spinner
+            android:id="@+id/spinJenisCuti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Jenis Cuti"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="PERHATIAN"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Pengajuan minimal 1 minggu sebelumnya.\n2. Sebelum melakukan pengajuan cuti, pekerjaan wajib diselesaikan terlebih dahulu/didelegasikan kepada rekan pengganti"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/btnSignUp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="@drawable/btn_login_bg"
+            android:layout_marginTop="50dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
